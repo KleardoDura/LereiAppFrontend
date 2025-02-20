@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "<div class='tp-caption1-wd-2 tt-white-color' data-swiper-parallax='-100px'>Instrumenta <br/> Muzikorë</div>",
+    "subTitle": "<span class='tp-caption1-wd-1 tt-white-color'>Multipurpose</span>",
+    "content": "<p class='tp-caption1-wd-3 tt-white-color'>TEK LEREI SHISNI DHE BLINI </p>",
+    "btnText": "SHOP NOW!",
+    "btnLink": "/shop",
+    "bgImage": "/assets/images/slides/01/slide2.jpg"
+  },
+  {
+    "id": 2,
+    "title": "<div class='tp-caption1-wd-2 tt-white-color' data-swiper-parallax='-100px'>Instrumenta <br/> Muzikorë</div>",
+    "subTitle": "<span class='tp-caption1-wd-1 tt-white-color'>Multipurpose</span>",
+    "content": "<p class='tp-caption1-wd-3 tt-white-color'>TEK LEREI SHISNI DHE BLINI </p>",
+     "btnText": "SHOP NOW!",
+    "btnLink": "/shop",
+    "bgImage": "/assets/images/slides/01/slide1.1.jpg"
+  }
+]

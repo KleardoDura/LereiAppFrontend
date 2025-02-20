@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "iconClass": "icon-f-94",
+    "text": "Krijoni njoftim",
+    "link": "/account/register"
+  },
+  {
+    "id": 2,
+    "iconClass": "icon-n-072",
+    "text": "Produktet e ruajtura",
+    "link": "/wishlist"
+  },
+  {
+    "id": 3,
+    "iconClass": "icon-f-76",
+    "text": "Kyçuni",
+    "link": "/account/login"
+  },
+  {
+    "id": 4,
+    "iconClass": "icon-f-94",
+    "text": "Rregjistrohuni",
+    "link": "/account/register"
+  }
+]

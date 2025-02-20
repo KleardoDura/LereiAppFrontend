@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "text": "KRYEFAQJA",
+    "link": "/",
+    "submenu":null,
+    "mega_menu": false
+  },
+  {
+    "id": 2,
+    "text": "PRODUKTET",
+    "link": "/shop",
+    "submenu": [
+      {
+        "id": 2.1,
+        "title": "",
+        "lists": [
+          {
+            "text": "Instrumente me tela",
+            "link": "/product/category/instrumente-me-tela",
+            "badge": null
+          },
+          {
+            "text": "Instrumente me tastiere",
+            "link": "/product/category/instrumente-me-tastiere",
+            "badge": null
+          },
+          {
+            "text": "Instrumente membranofon",
+            "link": "/product/category/instrumente-membranofon",
+            "badge": null
+          },
+          {
+            "text": "Instrumente elektronike",
+            "link": "/product/category/Instrumente-elektronike",
+            "badge": null
+          }
+        ]
+        }
+      ],
+    "mega_menu": false,
+    "promo": false
+  },
+
+ 
+  {
+    "id": 3,
+    "text": "KONTAKT",
+    "link": "/contact",
+    "submenu": null,
+    "mega_menu": false,
+    "promo": false
+  }
+]

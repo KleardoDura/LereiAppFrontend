@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "media": "facebook",
+    "username": "lereimusicstore",
+    "iconClass": "icon-g-64"
+  },
+  {
+    "id": 3,
+    "media": "instagram",
+    "username": "lereimusic",
+    "iconClass": "icon-g-67"
+  },
+  {
+    "id": 4,
+    "media": "youtube",
+    "username": "@lereimusicstore8961",
+    "iconClass": "icon-g-76"
+  }
+]
