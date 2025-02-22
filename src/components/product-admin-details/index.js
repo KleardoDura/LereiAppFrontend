@@ -439,7 +439,7 @@ const ProductDetails = ({ product }) => {
                       <br />
                       <div className="form-group">
                         <label htmlFor="imageUpload">
-                          MUND TË SHTONI DHE KATËR FOTO TË TJERA
+                          MUND TË SHTONI DHE TRE FOTO TË TJERA
                         </label>
                         <input
                           type="file"
@@ -468,6 +468,7 @@ const ProductDetails = ({ product }) => {
                           required
                         />
                         <br />
+                        {/*
                         <input
                           type="file"
                           name="image"
@@ -476,6 +477,7 @@ const ProductDetails = ({ product }) => {
                           accept="image/*"
                           required
                         />{" "}
+                        */}
                         <br />
                         <p
                           style={{

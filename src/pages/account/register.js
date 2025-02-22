@@ -89,9 +89,6 @@ const RegisterPage = () => {
   const register = async (event) => {
     event.preventDefault();
     if (validateForm()) {
-      console.log("Form data:", data);
-      console.log(process.env.NEXT_PUBLIC_BASE_URL);
-
       try {
         const res = await axios.put(
           `${process.env.NEXT_PUBLIC_BASE_URL}/auth/register-without-verification-code`,
@@ -103,7 +100,6 @@ const RegisterPage = () => {
             },
           }
         );
-        console.log(res.data);
         if (res?.data && typeof res.data === "string")
           setModalMessage(res.data);
         else
@@ -113,7 +109,6 @@ const RegisterPage = () => {
         setGotoLogin(true);
         setShowModal(true);
       } catch (err) {
-        console.log(err.response.data);
         if (err?.response?.data && typeof err.response.data === "string")
           setModalMessage(err.response.data);
         else

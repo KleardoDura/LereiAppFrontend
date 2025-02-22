@@ -56,7 +56,6 @@ const LoginPage = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (emailRegex.test(userNameOrEmail)) {
-      console.log("Email");
       setData((prevData) => ({
         ...prevData,
         email: userNameOrEmail,
@@ -69,7 +68,6 @@ const LoginPage = () => {
         userName: userNameOrEmail,
       }));
     }
-    console.log(userNameOrEmail);
   }, [userNameOrEmail]);
 
   const login = async (event) => {

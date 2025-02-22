@@ -41,6 +41,11 @@ const WishlistPage = () => {
     <Fragment>
       <Head>
         <title>Produktet e ruajtura</title>
+        <meta
+          name="description"
+          content="Lerei music eshte nje dyqan ku shiten instrumenta te
+                ndryshem muzikore"
+        />
       </Head>
 
       <Header

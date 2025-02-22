@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import PropTypes from "prop-types";
 import parse from "html-react-parser";
 import { Container } from "react-bootstrap";
-import { useWindowSize } from "@hooks";
-import { useEffect } from "react";
 
 const SliderFive = ({ className, sliderWrapper, data, dots, arrows }) => {
   const settings = {
@@ -13,10 +11,6 @@ const SliderFive = ({ className, sliderWrapper, data, dots, arrows }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-  const [windowSize] = useWindowSize();
-  useEffect(() => {
-    console.log("Current window size:", windowSize);
-  }, [windowSize]);
 
   return (
     <div className={`container-indent ${className ? className : ""}`}>

@@ -1,15 +1,10 @@
 import Link from "next/link";
-import { useContext } from "react";
 import Widget from "@components/widget";
 import { toCapitalize } from "@utils/toCapitalize";
 import accountData from "@data/account-menu.json";
-import { arrSortByCharacter } from "@utils/method";
 import { Col, Container, Row } from "react-bootstrap";
-import { getProductsUniqueCategories } from "@utils/product";
-import { ProductsContext } from "@global/ProductsContext";
 
 const WidgetsOne = ({ className, dark }) => {
-  const { products } = useContext(ProductsContext);
   //const cats = getProductsUniqueCategories(products, 6);
   const categories =
     //getProductsUniqueCategories(products, 6);

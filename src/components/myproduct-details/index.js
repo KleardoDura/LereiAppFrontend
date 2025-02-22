@@ -140,9 +140,6 @@ const ProductDetails = ({ product }) => {
       [name]: type === "checkbox" ? checked : value,
     }));
   };
-  useEffect(() => {
-    console.log(post);
-  }, [post]);
   const [files, setFiles] = useState({
     mainFile: mainPhotoPath ? backendUrl + mainPhotoPath : null,
     firstFile: firstPhotoPath ? backendUrl + firstPhotoPath : null,
@@ -150,7 +147,6 @@ const ProductDetails = ({ product }) => {
     thirdFile: thirdPhotoPath ? backendUrl + thirdPhotoPath : null,
     fourthFile: fourthPhotoPath ? backendUrl + fourthPhotoPath : null,
   });
-  console.log(backendUrl + mainPhotoPath);
   const [filePreviews, setFilePreviews] = useState({
     mainFile: mainPhotoPath ? backendUrl + mainPhotoPath : null,
     firstFile: firstPhotoPath ? backendUrl + firstPhotoPath : null,
@@ -220,7 +216,6 @@ const ProductDetails = ({ product }) => {
         };
         setFilePreviewsAssocArray(updatedFilePreviews);
       } catch (err) {
-        console.log(err);
         if (err?.response?.data && typeof err.response.data === "string")
           setModalMessage(err.response.data);
         else
@@ -281,8 +276,6 @@ const ProductDetails = ({ product }) => {
         }
       );
 
-      console.log(response);
-
       if (response?.data && typeof response.data === "string")
         window.location.reload();
       else {
@@ -292,7 +285,6 @@ const ProductDetails = ({ product }) => {
         setShowModal(true);
       }
     } catch (err) {
-      console.log(err);
       if (err?.response?.data && typeof err.response.data === "string")
         setModalMessage(err.response.data);
       else
@@ -770,7 +762,7 @@ const ProductDetails = ({ product }) => {
                       <br />
                       <div className="form-group">
                         <label htmlFor="firstFile">
-                          MUND TË SHTONI DHE KATËR FOTO TË TJERAA
+                          MUND TË SHTONI DHE TRE FOTO TË TJERA
                         </label>
                         <div
                           style={{
@@ -964,6 +956,7 @@ const ProductDetails = ({ product }) => {
                               </>
                             )}
                           </div>
+                          {/*
                           <div
                             style={{
                               display: "flex",
@@ -1027,6 +1020,7 @@ const ProductDetails = ({ product }) => {
                               </>
                             )}
                           </div>
+                          */}
                         </div>
                         <br />
                         <p

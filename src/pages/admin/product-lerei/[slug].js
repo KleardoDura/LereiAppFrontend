@@ -30,7 +30,6 @@ const PageProductDetails = () => {
             `${process.env.NEXT_PUBLIC_BASE_URL}/get-my-post-by-id/${slug}`,
             { withCredentials: true }
           );
-          console.log(response.data);
           if (response?.data) {
             setUserId(response.data.userId);
             setProduct(response.data);

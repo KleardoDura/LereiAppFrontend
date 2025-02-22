@@ -79,7 +79,6 @@ export const getStaticProps = async ({ params }) => {
       `${process.env.NEXT_PUBLIC_BASE_URL}/get-categories`
     );
     const categories = response.data;
-    console.log(categories);
 
     const category = categories.find((cat) => cat.link === params.slug);
 
@@ -108,7 +107,6 @@ export const getStaticPaths = async () => {
       `${process.env.NEXT_PUBLIC_BASE_URL}/get-categories`
     );
     const categories = response.data;
-    console.log(categories);
 
     const paths = categories.map((category) => ({
       params: { slug: category.link },

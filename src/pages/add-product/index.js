@@ -74,7 +74,6 @@ const AddProduct = () => {
       ...prevData,
       [name]: type === "checkbox" ? checked : value,
     }));
-    console.log(post);
   };
   const [files, setFiles] = useState({
     mainFile: null,
@@ -170,8 +169,6 @@ const AddProduct = () => {
         }
       );
 
-      console.log(response);
-
       if (response?.data && typeof response.data === "string") {
         setSuccess(true);
         setModalMessage(response.data);
@@ -181,7 +178,6 @@ const AddProduct = () => {
         );
       setShowModal(true);
     } catch (err) {
-      console.log(err);
       if (err?.response?.data && typeof err.response.data === "string")
         setModalMessage(err.response.data);
       else
@@ -592,7 +588,7 @@ const AddProduct = () => {
                           <br />
                           <div className="form-group">
                             <label htmlFor="firstFile">
-                              MUND TË SHTONI DHE KATËR FOTO TË TJERAA
+                              MUND TË SHTONI DHE TRE FOTO TË TJERA
                             </label>
                             <div
                               style={{
@@ -786,6 +782,7 @@ const AddProduct = () => {
                                   </>
                                 )}
                               </div>
+                              {/*
                               <div
                                 style={{
                                   display: "flex",
@@ -849,6 +846,7 @@ const AddProduct = () => {
                                   </>
                                 )}
                               </div>
+                              */}
                             </div>
                             <br />
                             <p

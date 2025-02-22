@@ -30,12 +30,10 @@ const Account = ({ className, isHidden, openHandler, closeHandler }) => {
         `${process.env.NEXT_PUBLIC_BASE_URL}/auth/details`,
         { withCredentials: true }
       );
-      console.log(response);
       if (response.status === 200) {
         router.push("/account/user-details");
       }
     } catch (error) {
-      console.log(error);
       router.push("/account/login");
     }
   };

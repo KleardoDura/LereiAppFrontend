@@ -1,10 +1,7 @@
-import { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ProductsContext } from "@global/ProductsContext";
 import { CategoryOne as Category } from "@components/category";
 
 const CategoriesOne = ({ className }) => {
-  const { products } = useContext(ProductsContext);
   const categories =
     //getProductsUniqueCategories(products, 6);
     [

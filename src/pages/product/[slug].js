@@ -58,6 +58,11 @@ const PageProductDetails = () => {
       <Head>
         <title>{product.name}</title>
         <meta name="description" content={product.description} />
+        <meta
+          name="description"
+          content="Lerei music eshte nje dyqan ku shiten instrumenta te
+                ndryshem muzikore"
+        />
       </Head>
 
       <Header

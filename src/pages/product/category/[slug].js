@@ -52,7 +52,12 @@ const PageProductCategory = ({ category }) => {
     <Fragment>
       <Head>
         <title>{toCapitalize(category.name)}</title>
-        <meta name="description" content={`Products under ${category.name}`} />
+        <meta name="content" content={`Products under ${category.name}`} />
+        <meta
+          name="description"
+          content="Lerei music eshte nje dyqan ku shiten instrumenta te
+                ndryshem muzikore"
+        />
       </Head>
 
       <Header
@@ -85,7 +90,6 @@ export const getStaticProps = async ({ params }) => {
       `${process.env.NEXT_PUBLIC_BASE_URL}/get-categories`
     );
     const categories = response.data;
-    console.log(categories);
 
     const category = categories.find((cat) => cat.link === params.slug);
 
@@ -114,7 +118,6 @@ export const getStaticPaths = async () => {
       `${process.env.NEXT_PUBLIC_BASE_URL}/get-categories`
     );
     const categories = response.data;
-    console.log(categories);
 
     const paths = categories.map((category) => ({
       params: { slug: category.link },

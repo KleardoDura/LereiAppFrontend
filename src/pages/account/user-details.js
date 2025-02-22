@@ -95,7 +95,6 @@ const UserDetails = () => {
           `${process.env.NEXT_PUBLIC_BASE_URL}/auth/details`,
           { withCredentials: true }
         );
-        console.log(response.data);
         setData(response.data);
       } catch (error) {
         console.log(error);
@@ -122,7 +121,6 @@ const UserDetails = () => {
             },
           }
         );
-        console.log(res.data);
         if (res?.data && typeof res.data === "string")
           setModalMessage(
             "Te dhenat ndryshuan me sukses, ju lutem hyni dhe njehere ne sistem"
@@ -146,7 +144,6 @@ const UserDetails = () => {
         `${process.env.NEXT_PUBLIC_BASE_URL}/auth/logout`,
         { withCredentials: true }
       );
-      console.log(response.data);
     } catch (error) {
       console.log(error);
     }
@@ -161,7 +158,6 @@ const UserDetails = () => {
           { withCredentials: true }
         );
         setPosts(response.data);
-        console.log(response.data);
       } catch (error) {
         console.log(error);
         router.push("/account/login");

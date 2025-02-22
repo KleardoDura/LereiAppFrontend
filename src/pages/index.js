@@ -7,7 +7,6 @@ import sliderData from "@data/slider/home-one.json";
 import { HeaderOne as Header } from "@components/header";
 import { SliderFive as Slider } from "@components/slider";
 import { FooterOne as Footer } from "@components/footer";
-import { ProductsContext } from "@global/ProductsContext";
 import { HomePagesNavData as navContent } from "@data/navbar";
 import { HomePagesNavData as adminNavContent } from "@data/navbar/admin-navbar";
 
@@ -66,6 +65,11 @@ const Home = ({ blogs }) => {
     <Fragment>
       <Head>
         <title>Lerei Music</title>
+        <meta
+          name="description"
+          content="Lerei music eshte nje dyqan ku shiten instrumenta te
+                ndryshem muzikore"
+        />
       </Head>
 
       <Header
@@ -144,183 +148,3 @@ const styles = {
 };
 
 export default Home;
-const latesProducts = [
-  {
-    id: 8,
-    name: "Bateri1",
-    badge: null,
-    vendor: "Lerei Music Store",
-    categories: [3],
-    price: 80,
-    currency: "EUR",
-    email: "kleo@kleo.al",
-    phoneNo: "0693449380",
-    thumbs: [
-      "/assets/images/product/instrumente-membranofon/8/main1.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-    ],
-    previewImages: [
-      "/assets/images/product/instrumente-membranofon/8/main1.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main4.jpg",
-    ],
-    excerpt:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    description:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-  },
-  {
-    id: 9,
-    name: "Bateri2",
-    badge: null,
-    vendor: "Lerei Music Store",
-    categories: [3],
-    price: 100,
-    currency: "EUR",
-    email: "kleo@kleo.al",
-    phoneNo: "0693449380",
-    thumbs: [
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-    ],
-    previewImages: [
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main4.jpg",
-    ],
-    excerpt:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    description:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-  },
-  {
-    id: 3,
-    name: "Kitare3",
-    badge: null,
-    vendor: "Lerei Music Store",
-    categories: [1],
-    price: 7000,
-    currency: "LEK",
-    email: "kleo@kleo.al",
-    phoneNo: "0693449380",
-    thumbs: [
-      "/assets/images/product/kitare/1/main2.jpg",
-      "/assets/images/product/kitare/1/main3.jpg",
-    ],
-    previewImages: [
-      "/assets/images/product/kitare/1/main.jpg",
-      "/assets/images/product/kitare/1/main3.jpg",
-      "/assets/images/product/product-02-05.jpg",
-      "/assets/images/product/kitare/1/main2.jpg",
-      "/assets/images/product/kitare/1/main4.jpg",
-      "/assets/images/product/product-02-06.jpg",
-    ],
-    excerpt:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    description:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-  },
-
-  {
-    id: 4,
-    name: "Organo1",
-    badge: null,
-    vendor: "Lerei Music Store",
-    categories: [2],
-    price: 80,
-    currency: "EUR",
-    email: "kleo@kleo.al",
-    phoneNo: "0693449380",
-    thumbs: [
-      "/assets/images/product/instrumente-me-tastier/3/main1.jpg",
-      "/assets/images/product/instrumente-me-tastier/3/main2.jpg",
-    ],
-    previewImages: [
-      "/assets/images/product/instrumente-me-tastier/3/main1.jpg",
-      "/assets/images/product/instrumente-me-tastier/3/main2.jpg",
-      "/assets/images/product/product-02-05.jpg",
-      "/assets/images/product/product-02-06.jpg",
-    ],
-    excerpt:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    description:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-  },
-  {
-    id: 12,
-    name: "Bateri4",
-    badge: null,
-    vendor: "Lerei Music Store",
-    categories: [3],
-    price: 80,
-    currency: "EUR",
-    email: "kleo@kleo.al",
-    phoneNo: "0693449380",
-    thumbs: [
-      "/assets/images/product/instrumente-membranofon/8/main4.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-    ],
-    previewImages: [
-      "/assets/images/product/instrumente-membranofon/8/main4.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main4.jpg",
-    ],
-    excerpt:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    description:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-  },
-  {
-    id: 13,
-    name: "Bateri5",
-    badge: null,
-    vendor: "Lerei Music Store",
-    categories: [3],
-    price: 900,
-    currency: "EUR",
-    email: "kleo@kleo.al",
-    phoneNo: "0693449380",
-    thumbs: [
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-    ],
-    previewImages: [
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main4.jpg",
-    ],
-    excerpt:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    description:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-  },
-  {
-    id: 14,
-    name: "Bateri6",
-    badge: null,
-    vendor: "Lerei Music Store",
-    categories: [3],
-    price: 80,
-    currency: "EUR",
-    email: "kleo@kleo.al",
-    phoneNo: "0693449380",
-    thumbs: [
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main1.jpg",
-    ],
-    previewImages: [
-      "/assets/images/product/instrumente-membranofon/8/main1.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main2.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main3.jpg",
-      "/assets/images/product/instrumente-membranofon/8/main4.jpg",
-    ],
-    excerpt:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    description:
-      "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-  },
-];

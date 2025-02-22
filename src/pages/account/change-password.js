@@ -95,7 +95,6 @@ const ChangePassword = () => {
             },
           }
         );
-        console.log(res);
 
         if (res?.data && typeof res.data === "string")
           setModalMessage(res.data);
@@ -106,7 +105,6 @@ const ChangePassword = () => {
         setGotoLogin(true);
         setShowModal(true);
       } catch (err) {
-        console.log(err);
         if (err?.response?.data && typeof err.response.data === "string")
           setModalMessage(err.response.data);
         else
