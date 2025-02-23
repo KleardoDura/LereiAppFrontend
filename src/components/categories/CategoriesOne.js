@@ -23,9 +23,9 @@ const CategoriesOne = ({ className }) => {
       { name: "Instrumente me hark", image: "instrumente_me_hark2.png" },
 
       { name: "Instrumente tradicional", image: "instrumente_tradicional.png" },
-      { name: "Aksesore kitare", image: "aksesor.png" },
+      { name: "Aksesore", image: "aksesor.png" },
       /*
-      { name: "Aksesore kitare", image: "aksesor.png" },
+      { name: "Aksesore ", image: "aksesor.png" },
       { name: "Kurse kitare", image: "kurse_kitare.png" },
   */
     ];

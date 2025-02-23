@@ -445,7 +445,7 @@ const AddProduct = () => {
                               <option value="5">Instrumente frymore</option>
                               <option value="6">Instrumente me hark</option>
                               <option value="7">Instrumente tradicional</option>
-                              <option value="8">Aksesore kitare</option>
+                              <option value="8">Aksesore</option>
                               <option value="9">Te tjera</option>
                             </select>
                           </div>

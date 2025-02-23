@@ -390,9 +390,7 @@ const ProductDetails = ({ product }) => {
                           <option value="Instrumente tradicional">
                             Instrumente tradicional
                           </option>
-                          <option value="Aksesore kitare">
-                            Aksesore kitare
-                          </option>
+                          <option value="Aksesore">Aksesore</option>
                           <option value="Te tjera">Te tjera</option>
                         </select>
                       </div>
