@@ -3,7 +3,7 @@ import React from "react";
 const WhatsappButton = ({ product }) => {
   const phoneNumber = "355685443400";
   const relativePath = product.id;
-  const productUrl = "http://localhost:3000/product/" + relativePath;
+  const productUrl = "https://lereimusic.com/product/" + relativePath;
   const message = `Pershendetje, jam i interesuar per produktin: ${productUrl} `;
   const encodedMessage = encodeURIComponent(message);
 
