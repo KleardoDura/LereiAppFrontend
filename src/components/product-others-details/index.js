@@ -308,6 +308,7 @@ const ProductDetails = ({ product }) => {
                           className="form-control"
                           placeholder=""
                           required
+                          maxLength="26"
                         />
                       </div>
                       <div className="form-group">
@@ -495,7 +496,7 @@ const ProductDetails = ({ product }) => {
                         <Col xs="auto" className="mr-auto">
                           <div className="form-group">
                             <button className="btn btn-border">
-                              PUKLIKONI PRODUKTIN
+                              PUBLIKONI PRODUKTIN
                             </button>
                           </div>
                         </Col>
