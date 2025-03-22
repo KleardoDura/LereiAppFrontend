@@ -199,9 +199,9 @@ const AddProduct = () => {
     if (!post.vendor.trim()) {
       newErrors.vendor = "Emri i shitesit nuk mund të jetë bosh";
     }
-    if (post.title.trim() && post.title.trim().length > 20) {
+    if (post.title.trim() && post.title.trim().length > 26) {
       newErrors.title =
-        "Emri i produktit nuk mund të jetë i gjatë më shumë se 20 karaktere";
+        "Emri i produktit nuk mund të jetë i gjatë më shumë se 26 karaktere";
     }
     //if ((String(post.price).trim().length = 0))
     if (
@@ -328,7 +328,7 @@ const AddProduct = () => {
                               required
                               value={post.title}
                               onChange={handleChange}
-                              maxLength="20"
+                              maxLength="26"
                             />
                             {errors.title && (
                               <div style={{ color: "red" }}>{errors.title}</div>
@@ -869,7 +869,7 @@ const AddProduct = () => {
                                   className="btn btn-border"
                                   onClick={handleUpload}
                                 >
-                                  PUKLIKONI PRODUKTIN
+                                  PUBLIKONI PRODUKTIN
                                 </button>
                               </div>
                             </Col>

@@ -5,7 +5,7 @@ const ProductPerPage = ({ productPerPage, onProductPerPageHandler }) => {
 
   let showPerPage = [];
 
-  for (let i = 1, j = 8; j <= products.length; i++, j += 8) {
+  for (let i = 1, j = 8; j <= 70; i++, j += 8) {
     let no = 8 * i;
     showPerPage.push(no);
   }

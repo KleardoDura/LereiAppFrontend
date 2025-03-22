@@ -26,7 +26,7 @@ const ContactMethod = ({ className }) => {
                 E Mërkurë: 09:30 – 20:00 <br />
                 E Enjte: 09:00 – 20:00 <br />
                 E Premte: 09:00 – 20:00 <br />
-                E Shtunë: Mbyllur <br />E Diel: Mbyllur
+                E Shtunë: 09:00 – 17:00 <br />E Diel: Mbyllur
               </address>
             </div>
           </Col>

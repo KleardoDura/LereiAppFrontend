@@ -307,7 +307,8 @@ const ProductDetails = ({ product }) => {
                           id="productName"
                           className="form-control"
                           placeholder=""
-                          required
+                          maxLength="26"
+			  required
                         />
                       </div>
                       <div className="form-group">
