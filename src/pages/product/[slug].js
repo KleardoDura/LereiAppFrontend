@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Breadcrumb from "@components/ui/breadcrumb";
+import SearchProduct from "@components/ui/searchproduct";
 import { FooterOne as Footer } from "@components/footer";
 import { HeaderOne as Header } from "@components/header";
 import ProductDetails from "@components/product-details";
@@ -17,7 +17,6 @@ const PageProductDetails = () => {
   const [loading, setLoading] = useState(true);
 
   const logo = "/assets/images/no-placeholder/logo.png";
-
   useEffect(() => {
     if (slug) {
       const getPost = async () => {
@@ -72,7 +71,7 @@ const PageProductDetails = () => {
         navbarAlignment="left"
       />
       <ContentWrapper>
-        <Breadcrumb />
+        <SearchProduct />
 
         <ProductDetails product={product} />
 

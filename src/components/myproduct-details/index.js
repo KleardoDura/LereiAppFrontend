@@ -622,6 +622,7 @@ const ProductDetails = ({ product }) => {
                           <option value="7">Instrumente tradicional</option>
                           <option value="8">Aksesore</option>
                           <option value="9">Te tjera</option>
+                          {user.id == 1 && <option value="10">Oferta</option>}
                         </select>
                       </div>
                       {user.id == 1 && (
@@ -667,6 +668,7 @@ const ProductDetails = ({ product }) => {
                           cols="20" // This ensures each line can only fit 25 characters
                           value={post.description}
                           onChange={handleChange}
+                          maxLength="1490"
                         ></textarea>
                       </div>
                     </form>

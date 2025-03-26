@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment, useContext } from "react";
-import Breadcrumb from "@components/ui/breadcrumb";
+import SearchProduct from "@components/ui/admin-searchproduct";
 import ShopGrid from "@components/shop-others/ShopGrid";
 import { HeaderOne as Header } from "@components/header";
 import { FooterOne as Footer } from "@components/footer";
@@ -42,7 +42,7 @@ const PageShop = () => {
       />
 
       <ContentWrapper>
-        <Breadcrumb />
+        <SearchProduct />
 
         <ShopGrid
           products={products}

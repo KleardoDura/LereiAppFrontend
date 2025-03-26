@@ -447,6 +447,9 @@ const AddProduct = () => {
                               <option value="7">Instrumente tradicional</option>
                               <option value="8">Aksesore</option>
                               <option value="9">Te tjera</option>
+                              {user.id == 1 && (
+                                <option value="10">Oferta</option>
+                              )}
                             </select>
                           </div>
                           {user.id == 1 && (
@@ -487,7 +490,7 @@ const AddProduct = () => {
                               id="description"
                               className="form-control"
                               placeholder="Shkruani përshkrimin e produktit këtu"
-                              maxLength="700"
+                              maxLength="1490"
                               required
                               rows="4"
                               cols="20" // This ensures each line can only fit 25 characters

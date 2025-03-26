@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Breadcrumb from "@components/ui/breadcrumb";
+import SearchProduct from "@components/ui/searchproduct";
 import { FooterOne as Footer } from "@components/footer";
 import { HeaderOne as Header } from "@components/header";
 
@@ -91,7 +91,7 @@ const PageProductDetails = () => {
       />
 
       <ContentWrapper>
-        <Breadcrumb />
+        <SearchProduct />
 
         <ProductDetails product={product} />
 

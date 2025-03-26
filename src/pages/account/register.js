@@ -157,6 +157,7 @@ const RegisterPage = () => {
                             value={data.userName}
                             onChange={handleChange}
                             required
+                            maxLength="70"
                           />
                           {errors.userName && (
                             <div style={{ color: "red" }}>
@@ -175,6 +176,7 @@ const RegisterPage = () => {
                             value={data.email}
                             onChange={handleChange}
                             required
+                            maxLength="70"
                           />
                           {errors.email && (
                             <div style={{ color: "red" }}>{errors.email}</div>
@@ -193,6 +195,7 @@ const RegisterPage = () => {
                             value={data.phoneNo}
                             onChange={handleChange}
                             required
+                            maxLength="25"
                           />
                           {errors.phoneNo && (
                             <div style={{ color: "red" }}>{errors.phoneNo}</div>

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
-import Breadcrumb from "@components/ui/breadcrumb";
+import SearchProduct from "@components/ui/searchproduct";
 import ShopGrid from "@components/shop/ShopGrid";
 import { toCapitalize } from "@utils/toCapitalize";
 import { FooterOne as Footer } from "@components/footer";
@@ -68,7 +68,7 @@ const PageProductCategory = ({ category }) => {
       />
 
       <ContentWrapper>
-        <Breadcrumb />
+        <SearchProduct />
         <ShopGrid
           handleSortByChange={handleSortByChange}
           sidebar={true}
@@ -89,6 +89,7 @@ export const getStaticProps = async ({ params }) => {
     const response = await axios.get(
       `${process.env.NEXT_PUBLIC_BASE_URL}/get-categories`
     );
+    console.log(`${process.env.NEXT_PUBLIC_BASE_URL}/get-categories`);
     const categories = response.data;
 
     const category = categories.find((cat) => cat.link === params.slug);

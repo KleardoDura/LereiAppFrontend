@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
-import Breadcrumb from "@components/ui/breadcrumb";
+import SearchProduct from "@components/ui/searchproduct";
 import ShopGrid from "@components/shop/ShopGrid";
 import { toCapitalize } from "@utils/toCapitalize";
 import { FooterOne as Footer } from "@components/footer";
@@ -58,7 +58,7 @@ const PageProductCategory = ({ category }) => {
       />
 
       <ContentWrapper>
-        <Breadcrumb />
+        <SearchProduct />
         <ShopGrid
           sidebar={true}
           sidebarPosition="left"

@@ -358,6 +358,7 @@ const ProductDetails = ({ product }) => {
                           placeholder=""
                           required
                           defaultValue="0693449380"
+                          maxLength="20"
                         />
                       </div>
                       <div className="form-group">
@@ -406,6 +407,7 @@ const ProductDetails = ({ product }) => {
                           placeholder="Shkruani përshkrimin e produktit këtu"
                           required
                           rows="4"
+                          maxLength="1490"
                         ></textarea>
                       </div>
                     </form>

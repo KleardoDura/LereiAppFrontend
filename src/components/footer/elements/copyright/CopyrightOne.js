@@ -14,18 +14,7 @@ const CopyrightOne = ({ className, logo, dark }) => {
           <div className="tt-col-center">
             <div className="tt-col-item">
               <div className="tt-box-copyright ht-copy">
-                &copy; Lerei Music Store {new Date().getFullYear()}. Developed
-                by{" "}
-                {/*
-                <i className="text-danger icon-h-37" /> by{" "}
-                */}
-                <a
-                  href="https://localseo.al"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LocalSEO.al
-                </a>
+                &copy; Lerei Music Store 2025
               </div>
             </div>
           </div>
