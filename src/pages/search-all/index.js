@@ -16,6 +16,7 @@ const PageShop = () => {
   const router = useRouter();
   const [products, setProducts] = useState([]);
   const [title, setTitle] = useState("");
+
   useEffect(() => {
     if (router.query.title) {
       setTitle(router.query.title);
@@ -25,20 +26,25 @@ const PageShop = () => {
   const [selectedSortValue, setSelectedSortValue] = useState("default");
 
   useEffect(() => {
-    const getPosts = async () => {
-      try {
-        const response = await axios.post(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/search`,
-          { title: title }, // Send the title inside an object
-          { withCredentials: true }
-        );
-        setProducts(response.data);
-      } catch (error) {
-        console.log(error);
+    const debounceTimer = setTimeout(() => {
+      if (title) {
+        const getPosts = async () => {
+          try {
+            const response = await axios.post(
+              `${process.env.NEXT_PUBLIC_BASE_URL}/search`,
+              { title: title },
+              { withCredentials: true }
+            );
+            setProducts(response.data);
+          } catch (error) {
+            console.log(error);
+          }
+        };
+        getPosts();
       }
-    };
+    }, 300); // 300ms delay
 
-    getPosts();
+    return () => clearTimeout(debounceTimer);
   }, [title, selectedSortValue]);
 
   const handleSortByChange = (value) => {
