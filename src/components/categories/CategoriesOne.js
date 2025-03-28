@@ -7,7 +7,7 @@ const CategoriesOne = ({ className }) => {
     [
       { name: "Instrumente me tela", image: "instrumente_me_tela2.png" },
       {
-        name: "Instrumente me tastierë",
+        name: "Instrumente me tastiere",
         image: "instrumente_me_tastiere.png",
       },
       {
@@ -15,15 +15,15 @@ const CategoriesOne = ({ className }) => {
         image: "instrumente_membranofon3.png",
       },
       {
-        name: "Instrumente elektronikë",
+        name: "Instrumente elektronike",
         image: "instrumente_elektronike2.png",
       },
 
-      { name: "Instrumente frymor", image: "instrumente_frymore3.png" },
+      { name: "Instrumente frymore", image: "instrumente_frymore3.png" },
       { name: "Instrumente me hark", image: "instrumente_me_hark2.png" },
 
       { name: "Instrumente tradicional", image: "instrumente_tradicional.png" },
-      { name: "Aksesor", image: "aksesor.png" },
+      { name: "Aksesore", image: "aksesor.png" },
       /*
       { name: "Aksesore ", image: "aksesor.png" },
       { name: "Kurse kitare", image: "kurse_kitare.png" },
@@ -63,7 +63,7 @@ const CategoriesOne = ({ className }) => {
               <div className={`tt-description }`}>
                 <div className="tt-description-wrapper">
                   <div className="tt-background" />
-                  <div className="tt-title-small">MERR OFERTËN TANI</div>
+                  <div className="tt-title-small">MERR OFERTEN TANI</div>
                 </div>
               </div>
             </Link>
