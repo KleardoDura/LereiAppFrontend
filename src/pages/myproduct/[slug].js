@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import SearchProductAdmin from "@components/ui/admin-searchproduct";
 import SearchProduct from "@components/ui/searchproduct";
 import { FooterOne as Footer } from "@components/footer";
 import { HeaderOne as Header } from "@components/header";
@@ -91,7 +92,7 @@ const PageProductDetails = () => {
       />
 
       <ContentWrapper>
-        <SearchProduct />
+        {user.id == 1 ? <SearchProductAdmin /> : <SearchProduct />}
 
         <ProductDetails product={product} />
 

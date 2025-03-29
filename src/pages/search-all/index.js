@@ -16,7 +16,7 @@ const PageShop = () => {
   const router = useRouter();
   const [products, setProducts] = useState([]);
   const [title, setTitle] = useState("");
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     if (router.query.title) {
       setTitle(router.query.title);
@@ -38,6 +38,8 @@ const PageShop = () => {
             setProducts(response.data);
           } catch (error) {
             console.log(error);
+          } finally {
+            setLoading(false);
           }
         };
         getPosts();
@@ -47,6 +49,9 @@ const PageShop = () => {
     return () => clearTimeout(debounceTimer);
   }, [title, selectedSortValue]);
 
+  if (loading) {
+    return <p>Loading...</p>;
+  }
   const handleSortByChange = (value) => {
     setSelectedSortValue(value);
   };

@@ -10,6 +10,8 @@ import { FooterOne as Footer } from "@components/footer";
 import { HomePagesNavData as navContent } from "@data/navbar";
 import { HomePagesNavData as adminNavContent } from "@data/navbar/admin-navbar";
 
+import SearchProductAdmin from "@components/ui/admin-searchproduct";
+import SearchProduct from "@components/ui/searchproduct";
 //import { ServicesOne as Services } from "@components/services";
 import { CategoriesOne as Categories } from "@components/categories";
 import { ContentWrapperOne as ContentWrapper } from "@components/wrapper";
@@ -80,6 +82,7 @@ const Home = ({ blogs }) => {
       />
 
       <ContentWrapper>
+        {user.id == 1 ? <SearchProductAdmin /> : <SearchProduct />}
         <Slider
           dots={true}
           arrows={true}
